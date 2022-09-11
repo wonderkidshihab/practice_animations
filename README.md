@@ -7,5 +7,5 @@ Take inpiration from the examples and create your own animations. You can also u
 
 ## Examples
 
-### 1. [Random Fireball(Flame)](
-    https://i.postimg.cc/kG3JY1fG/Screen-Shot-2022-09-12-at-4-51-30-AM.png)
+### 1. Random Fireball(Flame)
+    ![Random Fireball(Flame)](https://i.postimg.cc/kG3JY1fG/Screen-Shot-2022-09-12-at-4-51-30-AM.png)
