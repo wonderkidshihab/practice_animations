@@ -1,16 +1,11 @@
-# practice_animations
+# Flutter animations using CustomPainter and AnimationController (sometimes with Flame 😉)
 
-A new Flutter project.
+### Author: [Shihab Uddin](https://github.com/wonderkidshihab)
 
-## Getting Started
+Use this repository to learn how to create animations using Flutter's CustomPainter and AnimationController.
+Take inpiration from the examples and create your own animations. You can also use the examples as a starting point for your own projects.
 
-This project is a starting point for a Flutter application.
+## Examples
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. [Random Fireball(Flame)](
+    https://i.postimg.cc/kG3JY1fG/Screen-Shot-2022-09-12-at-4-51-30-AM.png)
