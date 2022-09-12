@@ -41,20 +41,20 @@ class AnimatedShape extends ShapeComponent {
     _position = Offset3D(
       Random().nextInt(WIDTH.toInt()).toDouble(),
       Random().nextInt(HEIGHT.toInt()).toDouble(),
-      mapBetween(Random().nextInt(10).toDouble(), 1, 5, 0, 10),
+      mapBetween(Random().nextInt(10).toDouble(), 1, 2, 0, 10),
     );
     return null;
   }
 
   @override
   void render(Canvas canvas) {
-    var paint = Paint()..color = Colors.red;
+    var paint = Paint()..color = Colors.white;
     paint.style = PaintingStyle.fill;
-    var paint2 = Paint()..color = Colors.yellow;
+    var paint2 = Paint()..color = Colors.white;
     paint2.style = PaintingStyle.fill;
     canvas.drawCircle(Offset(_position.x, _position.y), _position.z, paint);
     canvas.drawCircle(
-        Offset(_position.x, _position.y), _position.z / 3, paint2);
+        Offset(_position.x, _position.y), _position.z / 10, paint2);
     canvas.save();
     super.render(canvas);
   }
