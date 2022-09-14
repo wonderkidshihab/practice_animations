@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-class CustomAnimationsController extends GetxController {
-  //TODO: Implement CustomAnimationsController
+class SnakeGameController extends GetxController {
+  //TODO: Implement SnakeGameController
 
   final count = 0.obs;
   @override

@@ -10,7 +10,7 @@ import 'package:practice_animations/app/data/offset_3d.dart';
 late double HEIGHT;
 late double WIDTH;
 
-class RandomFireballAnimation extends FlameGame {
+class FireballAnimation extends FlameGame {
   int shapeCount = 600;
   @override
   Future<void>? onLoad() {

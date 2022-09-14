@@ -1,14 +1,14 @@
-import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:practice_animations/app/modules/CustomAnimations/views/random_fireball_animation.dart';
+import 'package:practice_animations/app/routes/app_pages.dart';
 
 void main() {
   runApp(
     GetMaterialApp(
-      title: "Application",
+      title: "Animations",
       debugShowCheckedModeBanner: false,
-      home: GameWidget(game: RandomFireballAnimation()),
+      initialRoute: AppPages.INITIAL,
+      getPages: AppPages.routes,
     ),
   );
 }

@@ -10,21 +10,44 @@ class HomeView extends GetView<HomeController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('HomeView'),
+        title: const Text('Animations', style: TextStyle(color: Colors.black)),
         centerTitle: true,
+        backgroundColor: Colors.transparent,
+        elevation: 0,
       ),
-      body: Center(
-        child: ButtonBar(
-          alignment: MainAxisAlignment.center,
-          children: [
-            ElevatedButton(
-              onPressed: () {
-                Get.toNamed(Routes.CUSTOM_ANIMATIONS);
-              },
-              child: const Text('Check out the animations'),
-            ),
-          ],
-        ),
+      body: Column(
+        children: [
+          Container(),
+          Expanded(
+            child: GridView(
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2), 
+            children: [
+              GestureDetector(
+                onTap: () => Get.toNamed(Routes.SNAKE_GAME),
+                child: Container(
+                  margin: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: const Center(child: Text('Snake Game')),
+                ),
+              ),
+              GestureDetector(
+                onTap: () => Get.toNamed(Routes.FIREBALL_ANIMATION),
+                child: Container(
+                  margin: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
+                  child: const Center(child: Text('Stars Animation')),
+                ),
+              ),
+            ],
+                  ),
+          ),
+        ],
       ),
     );
   }
